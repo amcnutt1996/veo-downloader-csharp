@@ -72,3 +72,4 @@
 /Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/obj/Debug/net10.0/VideoDownloader.pdb
 /Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/obj/Debug/net10.0/VideoDownloader.genruntimeconfig.cache
 /Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/obj/Debug/net10.0/ref/VideoDownloader.dll
+/Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/obj/Debug/net10.0/VideoDownloader.sourcelink.json

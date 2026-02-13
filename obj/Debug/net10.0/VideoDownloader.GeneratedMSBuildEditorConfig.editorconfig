@@ -26,5 +26,8 @@ build_property.EnableCodeStyleSeverity =
 [/Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/Styles/MainWindow_style.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

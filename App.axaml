@@ -2,14 +2,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="VideoDownloader.App"
              xmlns:local="using:VideoDownloader"
-             RequestedThemeVariant="Default">
-             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+             RequestedThemeVariant="Dark">
+    <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.DataTemplates>
-        <local:ViewLocator/>
+        <local:ViewLocator />
     </Application.DataTemplates>
-  
+
     <Application.Styles>
-        <FluentTheme />
+        <!-- Going to https://theme.xaml.live you can set the colors you want baseline for your app.
+                    Then you can import them here under <Application.Styles> so the
+                     app can call and use the values.-->
+        <FluentTheme>
+            <FluentTheme.Palettes>
+                <ColorPaletteResources x:Key="Light" Accent="#ff005369" AltHigh="White" AltLow="White"
+                                       AltMedium="White" AltMediumHigh="White" AltMediumLow="White" BaseHigh="Black"
+                                       BaseLow="#ff6ec5c2" BaseMedium="#ff2c8886" BaseMediumHigh="#ff005f5e"
+                                       BaseMediumLow="#ff167372" ChromeAltLow="#ff005f5e" ChromeBlackHigh="Black"
+                                       ChromeBlackLow="#ff6ec5c2" ChromeBlackMedium="#ff005f5e"
+                                       ChromeBlackMediumLow="#ff2c8886" ChromeDisabledHigh="#ff6ec5c2"
+                                       ChromeDisabledLow="#ff2c8886" ChromeGray="#ff167372" ChromeHigh="#ff6ec5c2"
+                                       ChromeLow="#ffb9edeb" ChromeMedium="#ffaae5e3" ChromeMediumLow="#ffb9edeb"
+                                       ChromeWhite="White" ListLow="#ffaae5e3" ListMedium="#ff6ec5c2"
+                                       RegionColor="#fff3e389" />
+                <ColorPaletteResources x:Key="Dark" Accent="#ff003366" AltHigh="Black" AltLow="Black" AltMedium="Black"
+                                       AltMediumHigh="Black" AltMediumLow="Black" BaseHigh="White" BaseLow="#ff007680"
+                                       BaseMedium="#ff72bdc4" BaseMediumHigh="#ff8fcfd5" BaseMediumLow="#ff399aa2"
+                                       ChromeAltLow="#ff8fcfd5" ChromeBlackHigh="Black" ChromeBlackLow="#ff8fcfd5"
+                                       ChromeBlackMedium="Black" ChromeBlackMediumLow="Black"
+                                       ChromeDisabledHigh="#ff007680" ChromeDisabledLow="#ff72bdc4"
+                                       ChromeGray="#ff56abb3" ChromeHigh="#ff56abb3" ChromeLow="#ff003a46"
+                                       ChromeMedium="#ff004954" ChromeMediumLow="#ff006771" ChromeWhite="White"
+                                       ListLow="#ff004954" ListMedium="#ff007680" RegionColor="#ff00151a" />
+            </FluentTheme.Palettes>
+        </FluentTheme>
     </Application.Styles>
 </Application>
