@@ -41,6 +41,7 @@
         <Setter Property="CornerRadius" Value="25"></Setter>
         <Setter Property="Value" Value="50"></Setter>
         <Setter Property="ShowProgressText" Value="True"></Setter>
+        <Setter Property="Foreground" Value="#af7f1b"></Setter>
     </Style>
     
     
