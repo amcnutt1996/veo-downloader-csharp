@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VideoDownloader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99723f539e0de1f120d0c645e680def5d9b9f150")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8330a3f73ecffe4b293aa8738ef2ea02301f3989")]
 [assembly: System.Reflection.AssemblyProductAttribute("VideoDownloader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VideoDownloader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
