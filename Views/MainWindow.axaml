@@ -9,7 +9,7 @@
         Height="200"
         CanResize="False"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/veo_down_logo.png"
+        Icon="/Assets/Images/veo_down_logo.png"
         Title="VeoDownloader">
 
     <Design.DataContext>
@@ -38,19 +38,16 @@
         <TextBox Name="UrlTextBox" />
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Stretch">
             <StackPanel.Classes>ButtonPanel</StackPanel.Classes>
-            <Button Name="DownloadBtn"> Download Video </Button>
+            <Button Name="DownloadBtn" Click="DownloadClick"> Download Video </Button>
             <Button Name="DownloadLocationBtn"> Change Download Location </Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Stretch">
             <ProgressBar Name="DownloadProgressBar" />
             <Button Name="StopDownloadBtn">
-                <Border>
-                    <Border.Classes>StopImage</Border.Classes>
-                </Border>
-                <!-- <Image Source="/Assets/stop-circle.png"> -->
-                <!--     <Image.Classes>StopImage</Image.Classes> -->
-                <!-- </Image>  -->
                 <Button.Classes>StopBtn</Button.Classes>
+                <Image Source="/Assets/Images/stop-circle.png" RenderOptions.BitmapInterpolationMode="HighQuality">
+                    <Image.Classes>StopImage</Image.Classes>
+                </Image>
             </Button>
         </StackPanel>
     </StackPanel>

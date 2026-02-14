@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x9xSokSNEYI=",
+  "dgSpecHash": "E2zmuZSDtR8=",
   "success": true,
   "projectFilePath": "/Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/VideoDownloader.csproj",
   "expectedPackageFiles": [
@@ -20,11 +20,13 @@
     "/Users/gmcnutt/.nuget/packages/avalonia.win32/11.3.11/avalonia.win32.11.3.11.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/avalonia.x11/11.3.11/avalonia.x11.11.3.11.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/communitytoolkit.mvvm/8.2.1/communitytoolkit.mvvm.8.2.1.nupkg.sha512",
+    "/Users/gmcnutt/.nuget/packages/dialoghost.avalonia/0.8.1/dialoghost.avalonia.0.8.1.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/harfbuzzsharp/8.3.1.1/harfbuzzsharp.8.3.1.1.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/harfbuzzsharp.nativeassets.linux/8.3.1.1/harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/harfbuzzsharp.nativeassets.macos/8.3.1.1/harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/harfbuzzsharp.nativeassets.webassembly/8.3.1.1/harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/harfbuzzsharp.nativeassets.win32/8.3.1.1/harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
+    "/Users/gmcnutt/.nuget/packages/messagebox.avalonia/3.3.1.1/messagebox.avalonia.3.3.1.1.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/microcom.runtime/0.11.0/microcom.runtime.0.11.0.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/skiasharp/2.88.9/skiasharp.2.88.9.nupkg.sha512",
     "/Users/gmcnutt/.nuget/packages/skiasharp.nativeassets.linux/2.88.9/skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",

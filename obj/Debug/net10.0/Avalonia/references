@@ -23,6 +23,7 @@
 /Users/gmcnutt/.nuget/packages/avalonia.win32/11.3.11/lib/net8.0/Avalonia.Win32.dll
 /Users/gmcnutt/.nuget/packages/avalonia.x11/11.3.11/lib/net8.0/Avalonia.X11.dll
 /Users/gmcnutt/.nuget/packages/communitytoolkit.mvvm/8.2.1/lib/net6.0/CommunityToolkit.Mvvm.dll
+/Users/gmcnutt/.nuget/packages/dialoghost.avalonia/0.8.1/lib/netstandard2.0/DialogHost.Avalonia.dll
 /Users/gmcnutt/.nuget/packages/harfbuzzsharp/8.3.1.1/lib/net8.0/HarfBuzzSharp.dll
 /Users/gmcnutt/.nuget/packages/microcom.runtime/0.11.0/lib/net5.0/MicroCom.Runtime.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/Microsoft.CSharp.dll
@@ -30,6 +31,7 @@
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/Microsoft.VisualBasic.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/Microsoft.Win32.Primitives.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/Microsoft.Win32.Registry.dll
+/Users/gmcnutt/.nuget/packages/messagebox.avalonia/3.3.1.1/lib/netstandard2.0/MsBox.Avalonia.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/mscorlib.dll
 /usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.2/ref/net10.0/netstandard.dll
 /Users/gmcnutt/.nuget/packages/skiasharp/2.88.9/lib/net6.0/SkiaSharp.dll

@@ -1,5 +1,6 @@
 namespace VideoDownloader.Models;
 
-public class TestClass
+public class Downloader
 {
+    
 }
