@@ -20,9 +20,16 @@ public partial class MainWindow : Window
     {
         // const string testLink = "https://app.veo.co/matches/20260212-training-february-12-v71d3ba7/";
         var scraper = new WebScraper();
-        var url = UrlTextBox.Text;
 
-        var downloadLink = await scraper.GetDownloadLink(url);
+        if (UrlTextBox.Text != null)
+        {
+            var downloadLink = scraper.GetDownloadLink(UrlTextBox.Text);    
+        }
+        else
+        {
+            ShowMessage("Please enter a VEO link.");
+        }
+        
     }
     
     
