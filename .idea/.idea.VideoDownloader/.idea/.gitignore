@@ -14,4 +14,4 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 .gitignore
-/bin/
+bin/
