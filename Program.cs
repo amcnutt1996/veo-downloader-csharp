@@ -1,7 +1,7 @@
 ﻿using System;
 using Avalonia;
 
-namespace VideoDownloader;
+namespace VEOVideoDownloader;
 
 internal sealed class Program
 {

@@ -1480,11 +1480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/VideoDownloader.csproj",
-      "projectName": "VideoDownloader",
-      "projectPath": "/Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/VideoDownloader.csproj",
+      "projectUniqueName": "/Users/gmcnutt/Documents/VideoDownloader_CS/VEOVideoDownloader/VEOVideoDownloader.csproj",
+      "projectName": "VEOVideoDownloader",
+      "projectPath": "/Users/gmcnutt/Documents/VideoDownloader_CS/VEOVideoDownloader/VEOVideoDownloader.csproj",
       "packagesPath": "/Users/gmcnutt/.nuget/packages/",
-      "outputPath": "/Users/gmcnutt/Documents/VideoDownloader_CS/VideoDownloader/obj/",
+      "outputPath": "/Users/gmcnutt/Documents/VideoDownloader_CS/VEOVideoDownloader/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/gmcnutt/.nuget/NuGet/NuGet.Config"

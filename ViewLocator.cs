@@ -2,9 +2,9 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using VideoDownloader.ViewModels;
+using VEOVideoDownloader.ViewModels;
 
-namespace VideoDownloader;
+namespace VEOVideoDownloader;
 
 /// <summary>
 ///     Given a view model, returns the corresponding view if possible.

@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace VideoDownloader.ViewModels;
+namespace VEOVideoDownloader.ViewModels;
 
 public abstract class ViewModelBase : ObservableObject
 {
