@@ -1,19 +1,25 @@
 using System;
-using System.Threading.Tasks;
-using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
-using VideoDownloader.Models;
 using MsBox.Avalonia;
 using MsBox.Avalonia.Enums;
+using VEOVideoDownloader.Services;
+using VEOVideoDownloader.ViewModels;
 
-namespace VideoDownloader.Views;
+namespace VEOVideoDownloader.Views;
 
 public partial class MainWindow : Window
 {
     public MainWindow()
     {
         InitializeComponent();
+        
+        // Create the service using this window's StorageProvider
+        var folderPickerService = new FolderPickerService(StorageProvider);
+        var settingsService = new SettingsService();
+            
+        // Create the ViewModel with the service
+        DataContext = new MainWindowViewModel(folderPickerService, settingsService);
     }
 
     public void DownloadClick(object sender, RoutedEventArgs args)
@@ -29,16 +35,8 @@ public partial class MainWindow : Window
         {
             ShowMessage("Please enter a VEO link.");
         }
-        
     }
     
-    
-    public void StopDownloadClk(object sender, RoutedEventArgs args)
-    {
-        //do stuff here when button clicked
-    }
-
-
     public static async void ShowMessage(string message)
     {
         try
