@@ -16,14 +16,14 @@ public class SettingsService : ISettingsService
         //get app data folder path
         //this is cross-platform
         var appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        
+
         //create the folder for your app.
         var appFolder = Path.Combine(appDataFolder, "VEOVideoDownloader");
 
         Directory.CreateDirectory(appFolder);
         _settingsFilePath = Path.Combine(appFolder, "settings.json");
     }
-    
+
     public async Task<AppSettings> LoadSettingsAsync()
     {
         // want to return the cached settings it it's already loaded.
@@ -40,10 +40,7 @@ public class SettingsService : ISettingsService
                 _cachedSettings = JsonSerializer.Deserialize<AppSettings>(json);
             }
 
-            if (_cachedSettings != null)
-            {
-                return _cachedSettings;
-            }
+            if (_cachedSettings != null) return _cachedSettings;
         }
         catch (Exception ex)
         {

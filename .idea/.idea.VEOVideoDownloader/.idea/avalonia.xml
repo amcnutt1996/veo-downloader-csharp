@@ -4,8 +4,8 @@
     <option name="projectPerEditor">
       <map>
         <entry key="App.axaml" value="VideoDownloader.csproj" />
-        <entry key="Styles/MainWindow_style.axaml" value="VideoDownloader.csproj" />
-        <entry key="Views/MainWindow.axaml" value="VideoDownloader.csproj" />
+        <entry key="Styles/MainWindow_style.axaml" value="VEOVideoDownloader.csproj" />
+        <entry key="Views/MainWindow.axaml" value="VEOVideoDownloader.csproj" />
       </map>
     </option>
   </component>
