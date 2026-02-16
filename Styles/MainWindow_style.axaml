@@ -17,61 +17,76 @@
         -->
 
     <Style Selector="Label">
-        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-        <Setter Property="Margin" Value="0 5"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Margin" Value="0 5" />
     </Style>
     <Style Selector="TextBox">
         <Setter Property="CornerRadius" Value="25" />
-        <Setter Property="Margin" Value="20 0"></Setter>
+        <Setter Property="Margin" Value="20 0" />
+        <Setter Property="Watermark" Value="Paste a VEO Video Download URL" />
     </Style>
+    <Style Selector="TextBox.center-watermark /template/ TextBlock#PART_Watermark">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="Padding" Value="0"/>
+    </Style>
+    <Style Selector="TextBlock">
+        <Setter Property="FontSize" Value="10"></Setter>
+        <Setter Property="Padding" Value="0, 5, 0, 0"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+        <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+    </Style>
+
+
     <Style Selector="Button">
-        <Setter Property="Margin" Value="20 0"></Setter>
-        <Setter Property="Width" Value="200"></Setter>
-        <Setter Property="Height" Value="50"></Setter>
-        <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
-        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+        <Setter Property="Margin" Value="20 0" />
+        <Setter Property="Width" Value="200" />
+        <Setter Property="Height" Value="50" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
     </Style>
     <Style Selector="StackPanel">
-        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center" />
     </Style>
-    
+
     <Style Selector="ProgressBar">
-        <Setter Property="Width" Value="350"></Setter>  
-        <Setter Property="Height" Value="20"></Setter>  
-        <Setter Property="CornerRadius" Value="25"></Setter>
-        <Setter Property="Value" Value="50"></Setter>
-        <Setter Property="ShowProgressText" Value="True"></Setter>
-        <Setter Property="Foreground" Value="#af7f1b"></Setter>
+        <Setter Property="Width" Value="350" />
+        <Setter Property="Height" Value="20" />
+        <Setter Property="CornerRadius" Value="25" />
+        <Setter Property="Value" Value="50" />
+        <Setter Property="ShowProgressText" Value="True" />
+        <Setter Property="Foreground" Value="#af7f1b" />
     </Style>
-    
-    
+
+
     <!-- use <Object.Classes>NewClassName</Object.Classes>" to name a certain selector.
     call it here with Object.Classname like below. -->
     <Style Selector="StackPanel.MainArea">
         <Setter Property="Orientation" Value="Vertical" />
         <Setter Property="VerticalAlignment" Value="Stretch" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        
+
         <Setter Property="Margin" Value="0" />
     </Style>
     <Style Selector="StackPanel.ButtonPanel">
         <Setter Property="Orientation" Value="Horizontal" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Center" />
-        <Setter Property="Margin" Value="0 15"></Setter>
+        <Setter Property="Margin" Value="0 15" />
     </Style>
 
     <Style Selector="Button.StopBtn">
-        <Setter Property="Width" Value="25"></Setter>
-        <Setter Property="Height" Value="25"></Setter>
+        <Setter Property="Width" Value="25" />
+        <Setter Property="Height" Value="25" />
         <Setter Property="CornerRadius" Value="10" />
     </Style>
-    
+
     <Style Selector="Image.StopImage">
-        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-        <Setter Property="VerticalAlignment" Value="Center"></Setter>
-        <Setter Property="Width" Value="25"></Setter>
-        <Setter Property="Height" Value="25"></Setter>
-        <Setter Property="BlendMode" Value="SourceAtop"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Width" Value="25" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="BlendMode" Value="SourceAtop" />
     </Style>
 </Styles>

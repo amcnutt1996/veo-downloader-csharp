@@ -21,7 +21,7 @@
         -->
     <Window.Styles>
         <Styles>
-            <StyleInclude Source="/Styles/MainWindow_style.axaml"></StyleInclude>
+            <StyleInclude Source="/Styles/MainWindow_style.axaml" />
         </Styles>
     </Window.Styles>
 
@@ -29,14 +29,16 @@
     <StackPanel>
         <StackPanel.Classes>MainArea</StackPanel.Classes>
         <Label> VEO Downloader</Label>
-        <TextBox Name="UrlTextBox" />
+        <TextBox Name="UrlTextBox" Text="{Binding VideoUrl}">
+            <TextBox.Classes>center-watermark</TextBox.Classes>
+        </TextBox>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Stretch">
             <StackPanel.Classes>ButtonPanel</StackPanel.Classes>
-            <Button Name="DownloadBtn" Click="DownloadClick"> Download Video </Button>
+            <Button Name="DownloadBtn" Command="{Binding DownloadVideoCommand}"> Download Video </Button>
             <Button Name="DownloadLocationBtn" Command="{Binding BrowseFolderCommand}"> Change Download Location </Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Stretch">
-            <ProgressBar Name="DownloadProgressBar" />
+            <ProgressBar Name="DownloadProgressBar" Value="{Binding DownloadProgress}" />
             <Button Name="StopDownloadBtn">
                 <Button.Classes>StopBtn</Button.Classes>
                 <Image Source="/Assets/Images/stop-circle.png" RenderOptions.BitmapInterpolationMode="HighQuality">
@@ -44,5 +46,6 @@
                 </Image>
             </Button>
         </StackPanel>
+        <TextBlock Text="{Binding StatusMessage}"/>
     </StackPanel>
 </Window>

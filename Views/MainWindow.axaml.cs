@@ -1,8 +1,6 @@
 using System;
+using System.Net.Http;
 using Avalonia.Controls;
-using Avalonia.Interactivity;
-using MsBox.Avalonia;
-using MsBox.Avalonia.Enums;
 using VEOVideoDownloader.Services;
 using VEOVideoDownloader.ViewModels;
 
@@ -10,43 +8,30 @@ namespace VEOVideoDownloader.Views;
 
 public partial class MainWindow : Window
 {
+    private readonly HttpClient _httpClient;
+    
     public MainWindow()
     {
         InitializeComponent();
-        
+
+        _httpClient = new HttpClient();
+
         // Create the service using this window's StorageProvider
         var folderPickerService = new FolderPickerService(StorageProvider);
         var settingsService = new SettingsService();
-            
-        // Create the ViewModel with the service
-        DataContext = new MainWindowViewModel(folderPickerService, settingsService);
+        var webScraperService = new WebScraperService(_httpClient);
+        var downloadService = new DownloadService(_httpClient);
+        var dialogService = new DialogService(this);
+
+        // Connect the services to the view
+        DataContext = new MainWindowViewModel(_httpClient, folderPickerService, settingsService, webScraperService, dialogService,
+            downloadService);
+
+        Closed += OnWindowClosed;
     }
 
-    public void DownloadClick(object sender, RoutedEventArgs args)
+    private void OnWindowClosed(object? sender, EventArgs e)
     {
-        // const string testLink = "https://app.veo.co/matches/20260212-training-february-12-v71d3ba7/";
-        var scraper = new WebScraper();
-
-        if (UrlTextBox.Text != null)
-        {
-            var downloadLink = scraper.GetDownloadLink(UrlTextBox.Text);    
-        }
-        else
-        {
-            ShowMessage("Please enter a VEO link.");
-        }
-    }
-    
-    public static async void ShowMessage(string message)
-    {
-        try
-        {
-            var box = MessageBoxManager.GetMessageBoxStandard("Error", message, ButtonEnum.Ok);
-            var result = await box.ShowAsync(); // Use await
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-        }
+        _httpClient.Dispose();
     }
 }
