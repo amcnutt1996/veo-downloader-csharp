@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VEOVideoDownloader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40257c9bcb65775f5986bfc8995b2d840502c07d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8668cd860bff671ba7d0d07ba3e786ed258ff57f")]
 [assembly: System.Reflection.AssemblyProductAttribute("VEOVideoDownloader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VEOVideoDownloader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
