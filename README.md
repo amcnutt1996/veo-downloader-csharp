@@ -3,7 +3,7 @@
 A cross-platform .NET 10 / Avalonia desktop app that takes a Veo match URL and downloads the full match recording as an `.mp4`.
 
 ![Screenshot of Veo Downloader](docs/screenshot.png)
-<!-- TODO: add docs/screenshot.png -->
+<sub>Screenshot: Linux build, idle state.</sub>
 
 > I built this app twice to compare the two languages: first in [**veo-downloader-cpp**](https://github.com/amcnutt1996/veo-downloader-cpp) (C++/Qt), then this C#/.NET rewrite (Jan – Feb 2026).
 
