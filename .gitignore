@@ -1,16 +1,13 @@
-/bin/
-# Default ignored files
-/shelf/
-/workspace.xml
-# Rider ignored files
-/.idea.VideoDownloader.iml
-/contentModel.xml
-/modules.xml
-/projectSettingsUpdater.xml
-# Ignored default folder with query files
-/queries/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-# Editor-based HTTP Client requests
-/httpRequests/
+# .NET build output
+bin/
+obj/
+*.user
+*.DotSettings.user
+
+# IDEs
+.idea/
+.vs/
+.vscode/
+
+# OS
+.DS_Store
